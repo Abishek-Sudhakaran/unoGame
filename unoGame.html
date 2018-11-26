@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="unoGame.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+</head>
+<body style="background-image: url(cards.jpeg)">
+<div class="wrapper" style="display: block;">
+<div class="systemContainer" id="container0">
+	<!-- <a href="file:///home/vhitech/Desktop/html/css%20new/css/materialize/routing.html" class="btn-large orange white-text" style="position: relative;left:-50%;"><i class="material-icons black-text large">arrow_back</i></a> -->
+
+
+	<div class="innerCards0" id="c00">
+		<div class="SystemNumber" id="s0"></div>
+		<div class="squareBox">
+			  <div class="box" style="background-color: red;"></div>
+			  <div class="box" style="background-color: blue;"></div>
+			  <div class="box" style="background-color: green;"></div>
+			  <div class="box" style="background-color: yellow;"></div>
+	    </div>
+
+	</div>
+
+	<div class="innerCards0" id="c01">
+		<div class="SystemNumber" id="s1"></div>
+		<div class="squareBox">
+			  <div class="box" style="background-color: red;"></div>
+			  <div class="box" style="background-color: blue;"></div>
+			  <div class="box" style="background-color: green;"></div>
+			  <div class="box" style="background-color: yellow;"></div>
+	        </div>
+	</div>
+	<div class="innerCards0" id="c02">
+		<div class="SystemNumber" id="s2"></div>
+		<div class="squareBox">
+			  <div class="box" style="background-color: red;"></div>
+			  <div class="box" style="background-color: blue;"></div>
+			  <div class="box" style="background-color: green;"></div>
+			  <div class="box" style="background-color: yellow;"></div>
+	        </div>
+	</div>
+	<div class="innerCards0" id="c03">
+		<div class="SystemNumber" id="s3"></div>
+		<div class="squareBox">
+			  <div class="box" style="background-color: red;"></div>
+			  <div class="box" style="background-color: blue;"></div>
+			  <div class="box" style="background-color: green;"></div>
+			  <div class="box" style="background-color: yellow;"></div>
+	        </div>
+	</div>
+	<div class="innerCards0" id="c04">
+		<div class="SystemNumber" id="s4"></div>
+		<div class="squareBox">
+			  <div class="box" style="background-color: red;"></div>
+			  <div class="box" style="background-color: blue;"></div>
+			  <div class="box" style="background-color: green;"></div>
+			  <div class="box" style="background-color: yellow;"></div>
+	        </div>
+	</div>
+	<div class="innerCards0" id="c05">
+		<div class="SystemNumber" id="s5"></div>
+		<div class="squareBox">
+			  <div class="box" style="background-color: red;"></div>
+			  <div class="box" style="background-color: blue;"></div>
+			  <div class="box" style="background-color: green;"></div>
+			  <div class="box" style="background-color: yellow;"></div>
+	        </div>
+	</div>
+	<div class="innerCards0" id="c06">
+		<div class="SystemNumber" id="s6"></div>
+			<div class="squareBox">
+			  <div class="box" style="background-color: red;"></div>
+			  <div class="box" style="background-color: blue;"></div>
+			  <div class="box" style="background-color: green;"></div>
+			  <div class="box" style="background-color: yellow;"></div>
+	        </div>
+	</div>
+	<div style="display: flex;">
+	<div style="height:180px;width:1px;background-color: white;position: absolute;right:-1%"></div>
+	<div style="height:40px;width:200px;position: absolute; right:-28%;top:20%;font-size: 30px;color:orange;text-align: center;">SYSTEM</div>
+	<i class="material-icons red-text large" id="systemArrow" style="position: absolute;top:40%;right:-17%">arrow_back</i>
+    </div>
+</div>
+<div class="tableDeck">
+	<div class="btn-large white-text btn-floating waves-effect waves-light " style="width: 100px;height: 100px;line-height: 92px;font-size: 30px;" id="unoButton" onclick="uno()">UNO</div>
+	<div class="cards" id="cc" style="width: 12%;position: relative;left:32%;">
+		<div class="deckNumber" id="d1"></div>
+	</div>
+	<div class="deckCards drawCard"  onclick="draw()"> DRAW</div>
+</div>
+<div class="playerContainer" id="container">
+	
+	<div class="innerCards" id="p00" onclick="player('p00','p0')">
+	
+		<div class="squareBox">
+			<div class="playerNumber" id="p0"></div>
+		</div>
+		<!-- <div style="height: 50px;background-color: green width: 50px;"></div> -->
+	</div>
+
+	<div class="innerCards" id="p01" onclick="player('p01','p1')">
+		
+		<div class="squareBox">
+			<div class="playerNumber" id="p1"></div>
+		</div>
+	</div>
+	<div class="innerCards" id="p02" onclick="player('p02','p2')">
+		
+		<div class="squareBox" style="float: left;">
+			<div class="playerNumber" id="p2"></div>
+		</div>
+	</div>
+	<div class="innerCards" id="p03" onclick="player('p03','p3')">
+	
+		<div class="squareBox" style="float: left";>
+				<div class="playerNumber" id="p3"></div>
+		</div>
+	</div>
+	<div class="innerCards" id="p04" onclick="player('p04','p4')">
+		
+		<div class="squareBox" style="float: left";>
+			<div class="playerNumber" id="p4"></div>
+		</div>
+	</div>
+	<div class="innerCards" id="p05" onclick="player('p05','p5')">
+		
+		<div class="squareBox" style="float: left";>
+			<div class="playerNumber" id="p5"></div>
+		</div>
+	</div>
+	<div class="innerCards" id="p06" onclick="player('p06','p6')" style="width: 24%;">
+		
+		<div class="squareBox" style="float: left";>
+			<div class="playerNumber" id="p6" style="left:10px;top:20px;"></div>
+		</div>
+	</div>
+	<div style="display: flex;">
+	<div style="height:180px;width:1px;background-color: white;position: absolute;left:-12%"></div>
+	<div style="height:40px;width:200px;position: absolute; left:-40%;top: 20%; font-size: 30px;color:orange;text-align: center;">PLAYER</div>
+	<i class="material-icons red-text large" id="playerArrow" style="position: absolute;top:40%;left:-30%">arrow_forward</i>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="unoGame.js"></script>
+</body>
+</html>
