@@ -9,7 +9,8 @@
 <body style="background-image: url(cards.jpeg)">
 <div class="wrapper" style="display: block;">
 <div class="systemContainer" id="container0">
-	<!-- <a href="file:///home/vhitech/Desktop/html/css%20new/css/materialize/routing.html" class="btn-large orange white-text" style="position: relative;left:-50%;"><i class="material-icons black-text large">arrow_back</i></a> -->
+	<a href="file:///home/vhitech/Desktop/html/css%20new/css/materialize/routing.html" class="btn-small orange white-text" style="position: absolute;left:-33%;    height: 42.4px;
+    line-height: 43.4px"><i class="material-icons black-text large">arrow_back</i></a>
 
 
 	<div class="innerCards0" id="c00">
@@ -78,7 +79,7 @@
 	        </div>
 	</div>
 	<div style="display: flex;">
-	<div style="height:180px;width:1px;background-color: white;position: absolute;right:-1%"></div>
+	<div style="height:180px;width:1px;background-color: white;position: absolute;right:-2%"></div>
 	<div style="height:40px;width:200px;position: absolute; right:-28%;top:20%;font-size: 30px;color:orange;text-align: center;">SYSTEM</div>
 	<i class="material-icons red-text large" id="systemArrow" style="position: absolute;top:40%;right:-17%">arrow_back</i>
     </div>
@@ -88,7 +89,9 @@
 	<div class="cards" id="cc" style="width: 12%;position: relative;left:32%;">
 		<div class="deckNumber" id="d1"></div>
 	</div>
-	<div class="deckCards drawCard"  onclick="draw()"> DRAW</div>
+	<div class="btn-small brown pulse" id="keep" style="position: absolute;top: 130px;right: 14%" onclick="keepTheCard()">keep</div>
+	<div class="btn-small indigo pulse" id="place" style="margin-left: 1%;position: absolute;right:8%;top:130px;" onclick="placeTheCard()">place</div>
+	<div class="deckCards drawCard" id="drawButton"  onclick="draw()"> DRAW</div>
 </div>
 <div class="playerContainer" id="container">
 	

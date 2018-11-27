@@ -1,5 +1,5 @@
 .systemContainer{
-	position: relative;
+	position: fixed;
 	top:20px;
 	width:50%;
 	left:27%;
@@ -77,8 +77,8 @@
    100%{margin-left:-22%;margin-left:-10%;}
 }*/
 .playerContainer{
-	position: relative;
-	top: 100px;
+	position: fixed;
+	top: 450px;
 	width:50%;
 	left: 27%;
 	display: flex;
@@ -95,8 +95,8 @@
     float: left;
 }
 .tableDeck{
-    position: relative;
-    top:60px;
+    position: fixed;
+    top:235px;
 	display: flex;
 	padding: 0 0 0 9%;
    
@@ -113,7 +113,7 @@
 }
 .SystemNumber{
     color:white;
-    font-size:30px;
+    font-size:0px;
     height: 20px;
     position: absolute;
     top:10px;
@@ -144,8 +144,9 @@
 }
 div.innerCards:hover{
     position: relative;
-    margin-top: -70px;
+    margin-top: -50px;
     margin-bottom: : 70px;
+
 }
 #unoButton{
     background-color: red;
@@ -178,4 +179,7 @@ div.innerCards:hover{
    
     50%{left:-40%;left:-36%;}
    100%{left:-32%;left:-30%;}
+}
+#keep,#place{
+    visibility: hidden;
 }
