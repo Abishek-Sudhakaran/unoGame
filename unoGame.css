@@ -143,9 +143,7 @@
     left:35%;  
 }
 div.innerCards:hover{
-    position: relative;
-    margin-top: -50px;
-    margin-bottom: : 70px;
+   z-index: 9999;
 
 }
 #unoButton{
@@ -170,6 +168,15 @@ div.innerCards:hover{
     animation-timing-function:ease;
    
 }
+#drawArrow{
+    visibility: hidden;
+    animation-name: arrow1;
+    animation-duration: 1s;    
+    animation-fill-mode: backwards;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+   
+}
 @keyframes arrow {
    
     50%{right:-30%;right:-25%;}
@@ -180,6 +187,74 @@ div.innerCards:hover{
     50%{left:-40%;left:-36%;}
    100%{left:-32%;left:-30%;}
 }
+@keyframes arrow1 {
+   
+    50%{left:60%;left:66%;}
+   100%{left:66%;left:70%;}
+}
 #keep,#place{
     visibility: hidden;
+}
+/*.resultBox{
+    position: relative;height: 400px;width: 600px;background-color: green;left:25%;top:100px;
+}*/
+#result{
+    left:30%;
+    position: absolute;
+    top: 83%;
+    font-size: 50px;
+    color: black;
+}
+#score{
+    font-size: 25px;
+    position: absolute;
+    top:20%;
+    left:70%;
+}
+
+#scoreContent{
+    font-size: 30px;
+    position: absolute;
+    left: 3%;
+    top: 20%;
+    background-color: black;
+    color: white;
+    width:100%;
+    text-align: center;
+}
+#scoreContent2{
+    font-size: 30px;
+    position: absolute;
+    left: 3%;
+    top: 20%;
+    background-color: black;
+    color: white;
+    width:100%;
+    text-align: center;
+}
+#loserScore{
+    font-size: 25px;
+    position: absolute;
+    top:40%;
+    left:70%;
+}
+.timer {
+  display: flex;
+  color: black;
+  width: 10%;
+  position: absolute;
+  top: 0%;
+  height: 8%;
+  right: 0;
+ 
+}
+.timeunits {
+  width: 10%;
+  text-align: center;
+  font-size: 30px;
+
+}
+input[type=text]{
+  
+    color:white;
 }

@@ -6,13 +6,18 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 </head>
-<body style="background-image: url(cards.jpeg)">
-<div class="wrapper" style="display: block;">
+<body style="background-image: url(cards.jpeg)" onload="getName()">
+<div id="wrapper" style="display: block;">
+	   <div class="timer">
+        <input type="text" name="hour" id="hh" value="0" class="timeunits" style="background-color: #794848;border-radius: 10%;border:2px solid black">
+        <input type="text" name="minutes" id="mm" value="2"class="timeunits" style="background-color: #794848;border-radius: 10%;border:2px solid black">
+        <input type="text"  name="seconds" id="ss" value="60" class="timeunits" style="background-color: #794848;border-radius: 10%;border:2px solid black">
+      </div>
 <div class="systemContainer" id="container0">
 	<a href="file:///home/vhitech/Desktop/html/css%20new/css/materialize/routing.html" class="btn-small orange white-text" style="position: absolute;left:-33%;    height: 42.4px;
     line-height: 43.4px"><i class="material-icons black-text large">arrow_back</i></a>
 
-
+    
 	<div class="innerCards0" id="c00">
 		<div class="SystemNumber" id="s0"></div>
 		<div class="squareBox">
@@ -91,6 +96,7 @@
 	</div>
 	<div class="btn-small brown pulse" id="keep" style="position: absolute;top: 130px;right: 14%" onclick="keepTheCard()">keep</div>
 	<div class="btn-small indigo pulse" id="place" style="margin-left: 1%;position: absolute;right:8%;top:130px;" onclick="placeTheCard()">place</div>
+	<!-- <i class="material-icons red-text large" id="drawArrow"  style="position: absolute;top:15%;left:70%">arrow_forward</i> -->
 	<div class="deckCards drawCard" id="drawButton"  onclick="draw()"> DRAW</div>
 </div>
 <div class="playerContainer" id="container">
@@ -145,6 +151,13 @@
 	<i class="material-icons red-text large" id="playerArrow" style="position: absolute;top:40%;left:-30%">arrow_forward</i>
     </div>
 </div>
+</div>
+<div id="resultBox" style="position: relative;height: 400px;width: 600px;background-color: green;left:25%;top:100px;visibility: hidden;">
+	<img src="un0winner.gif" style="width: 100%;">
+	<div id="result"></div>
+    <div id="score"></div>
+	<div id="loserScore"></div>
+	<a class="btn-large btn-floating blue" href="file:///home/vhitech/Desktop/html/css%20new/css/materialize/routing.html" style="position: absolute;bottom:20%;right:17%"><i class="material-icons small white-text">history</i></a>
 </div>
 <script type="text/javascript" src="unoGame.js"></script>
 </body>
